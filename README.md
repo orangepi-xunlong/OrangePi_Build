@@ -3,7 +3,7 @@ OrangePi Build System
 
 Welcome to OrangePi Build System, Good start Linux World with OrangePi!
 
-Funny with your idear and build your owner Linux system.
+Funny with your ideas and build your own Linux system.
 
 #### OrangePi Build System support list:
 
@@ -43,12 +43,12 @@ Funny with your idear and build your owner Linux system.
 
 #### Using OrangePi Build System
 
-   It's easy to build owner Linux distro in OrangePi Build System, you need follow
+   It's easy to build your own Linux distro with  the  OrangePi Build System, you need follow
    thoese steps:
 
    1. Download source code for your OrangePi Board.
 
-      You need clone this repertory, and run build scripts to download
+      You need clone this  repository, and run the build scripts to download
       source code for your OrangePi Board. such as:
       
       ```
@@ -79,7 +79,7 @@ Funny with your idear and build your owner Linux system.
      If you use another board, please change your dirent into "OrangePiH3"
 
 
-   2. Build owner distro OrangePi system
+   2. Build  your own  Linux Distro for OrangePi system
 
      Then, you only need run a scripts and you can build your owner system easily.
      Note, please don't run this scripts as root. Last, you need run scripts,
