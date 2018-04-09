@@ -21,6 +21,8 @@ set -e
 # OrangePi Lite          Allwinner H3
 # OrangePi PC Plus       Allwinner H3
 # OrangePi Mini2         Allwinner H3
+# OrangePi One Plus      Allwinner H6
+# OrangePi Lite2         Allwinner H6
 # OrangePi 2G-IOT        RDA8810
 # OrangePi i96           RDA8810
 
@@ -56,6 +58,8 @@ DISTRO=$(whiptail --title "OrangePi Build System" \
     "14"  "orangepi Prime" \
     "15"  "orangepi 2G-IOT" \
     "16"  "orangepi i96" \
+    "17"  "orangepi One Plus" \
+    "18"  "orangepi Lite2" \
     3>&1 1>&2 2>&3)
 
 if [ $OPTION = "0" -o $OPTION = "1" ]; then
@@ -65,6 +69,9 @@ if [ $OPTION = "0" -o $OPTION = "1" ]; then
     # OrangePi A64
     elif [ $DISTRO = "12" -o $DISTRO = "13" ]; then
         ./A64SDK_BuildEnvironment.sh
+    # OrangePi H6
+    elif [ $DISTRO = "17" -o $DISTRO = "18" ]; then
+        ./H6SDK_BuildEnvironment.sh
     # OrangePi RDA
     elif [ $DISTRO = "15" ]; then
         ./RDASDK_BuildEnvironment.sh
