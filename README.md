@@ -38,6 +38,10 @@ Funny with your ideas and build your own Linux system.
   * OrangePi 2G-IOT
 
   * OrangePi i96
+  
+  * OrangePi One Plus
+  
+  * OrangePi Lite2
 
 -----------------------------------------------------------------
 
@@ -52,7 +56,7 @@ Funny with your ideas and build your own Linux system.
       source code for your OrangePi Board. such as:
       
       ```
-        git clone https://github.com/orangepi-xunlong/OrangePi.git
+        git clone https://github.com/orangepi-xunlong/OrangePi_Build.git
       ```
       
       This scripts is a simple entry that build different OrangePi distro,
@@ -62,32 +66,33 @@ Funny with your ideas and build your own Linux system.
       ```
          ./Build_OrangePi.sh
       ```
+     
+      Choose correct OrangePi version that you want, and scripts will download
+      source code that contain kernel, uboot and build scripts.
 
+      It will cost some time, so please wait a mintue. After this finish, you
+      will get a new dirent and change your dirent into new dirent.
 
-     Choose correct OrangePi version that you want, and scripts will download
-     source code that contain kernel, uboot and build scripts.
+      If you use "OrangePi PC2/Prima/Zero plus2", please change your dirent into "OrangePiH5"
+     
+      If you use "OrangePi OnePlus/Lite2", please change your dirent into "OrangePiH6"
 
-     It will cost some time, so please wait a mintue. After this finish, you
-     will get a new dirent and change your dirent into new dirent.
+      If you use "OrangePi Win/Win plus", please change your dirent into "OrangePiA64"
 
-     If you use "OrangePi PC2/Prima/Zero plus2", please change your dirent into "OrangePiH5"
+      If you use "OrangePi Zero", please change your dirent into "OrangePiH2"
 
-     If you use "OrangePi Win/Win plus", please change your dirent into "OrangePiA64"
-
-     If you use "OrangePi Zero", please change your dirent into "OrangePiH2"
-
-     If you use another board, please change your dirent into "OrangePiH3"
+      If you use another board, please change your dirent into "OrangePiH3"
 
 
    2. Build  your own  Linux Distro for OrangePi system
 
-     Then, you only need run a scripts and you can build your owner system easily.
-     Note, please don't run this scripts as root. Last, you need run scripts,
-     such as:
+      Then, you only need run a scripts and you can build your owner system easily.
+      Note, please don't run this scripts as root. Last, you need run scripts,
+      such as:
      
-     ```
+      ```
        ./build.sh
-     ```
+      ```
 
 ------------------------------------------------------------------
 
@@ -249,3 +254,36 @@ Funny with your ideas and build your own Linux system.
     ```
       https://github.com/orangepi-xunlong/OrangePiH3_toolchain.git
     ```
+
+  * OrangePi OnePlus/Lite2
+
+    OrangePi OnePlus/Lite2 build on Allwinner H6 Soc,
+    the offfical maintain repertory as follow:
+
+    kernel:
+    
+    ```
+      https://github.com/orangepi-xunlong/OrangePiH6_kernel.git
+    ```
+    
+    u-boot:
+    
+    ```
+      https://github.com/orangepi-xunlong/OrangePiH6_uboot.git
+    ```
+    
+    build scripts
+    
+    ```
+      https://github.com/orangepi-xunlong/OrangePiH6_scripts.git
+    ```
+    
+    external binary file
+    
+    ```
+      https://github.com/orangepi-xunlong/OrangePiH6_external.git
+    ```
+    
+    toolchain
+    ```
+      https://github.com/orangepi-xunlong/OrangePiH6_toolchain.git
