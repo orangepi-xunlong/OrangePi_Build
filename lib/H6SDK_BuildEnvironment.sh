@@ -92,6 +92,7 @@ function install_toolchain()
     if [ ! -d $TOP_ROOT/OrangePiH6/toolchain/gcc-linaro-aarch ]; then
         mkdir -p $TOP_ROOT/OrangePiH6/.tmp_toolchain
         cd $TOP_ROOT/OrangePiH6/.tmp_toolchain
+	echo -e "\e[1;31m Download toolchain for H6 from Github \e[0m"
         curl -C - -o ./toolchain $toolchain
         unzip $TOP_ROOT/OrangePiH6/.tmp_toolchain/toolchain
         mkdir -p $TOP_ROOT/OrangePiH6/toolchain
@@ -101,10 +102,10 @@ function install_toolchain()
     fi
 }
 
+install_toolchain
 git_configure
 download_Code
 dirent_check
-install_toolchain
 end_op
 
 whiptail --title "OrangePi Build System" --msgbox \
