@@ -1,11 +1,11 @@
 OrangePi Build System
 ---------------------------------------
 
-Welcome to OrangePi Build System, Good start Linux World with OrangePi!
+Welcome to OrangePi Build System! A good place to start in the Linux World with OrangePi!
 
-Funny with your ideas and build your own Linux system.
+Have fun with your ideas and build your own Linux system.
 
-#### OrangePi Build System support list:
+#### OrangePi Build System supports:
 
   * OrangePi PC2
  
@@ -47,48 +47,50 @@ Funny with your ideas and build your own Linux system.
 
 #### Using OrangePi Build System
 
-   It's easy to build your own Linux distro with  the  OrangePi Build System, you need follow
-   thoese steps:
+It's easy to build your own Linux distro with the OrangePi Build System.
+
+You need only follow these steps:
 
    1. Download source code for your OrangePi Board.
 
-      You need clone this  repository, and run the build scripts to download
-      source code for your OrangePi Board. such as:
+      Clone this  repository and run the build scripts to download the
+      source code for your OrangePi Board:
       
       ```
         git clone https://github.com/orangepi-xunlong/OrangePi_Build.git
       ```
       
-      This scripts is a simple entry that build different OrangePi distro,
-      After finishing to download this repertory, you need change dirent into
-      "OrangePi", and run build scripts:
+      This script builds different OrangePi distros.
+      After downloading this repo, change dir to "OrangePi_Build"
+      and run build scripts:
       
       ```
+         cd OrangePi_Build
          ./Build_OrangePi.sh
       ```
      
-      Choose correct OrangePi version that you want, and scripts will download
-      source code that contain kernel, uboot and build scripts.
+      Choose your desired OrangePi version
+      and scripts will download the source code that contains the appropriate kernel, uboot, and build scripts.
 
-      It will cost some time, so please wait a mintue. After this finish, you
-      will get a new dirent and change your dirent into new dirent.
+      It may take some time, so please be patient.
+      After this finishes, you will get a new directory. Change to the new directory.
 
-      If you use "OrangePi PC2/Prima/Zero plus2", please change your dirent into "OrangePiH5"
+      If you use "OrangePi PC2/Prima/Zero plus2", rename the folder: "OrangePiH5"
      
-      If you use "OrangePi OnePlus/Lite2", please change your dirent into "OrangePiH6"
+      If you use "OrangePi OnePlus/Lite2", rename the folder: "OrangePiH6"
 
-      If you use "OrangePi Win/Win plus", please change your dirent into "OrangePiA64"
+      If you use "OrangePi Win/Win plus", rename the folder: "OrangePiA64"
 
-      If you use "OrangePi Zero", please change your dirent into "OrangePiH2"
+      If you use "OrangePi Zero", rename the folder: "OrangePiH2"
 
-      If you use another board, please change your dirent into "OrangePiH3"
+      If you use another board, rename the folder: "OrangePiH3"
 
 
    2. Build  your own  Linux Distro for OrangePi system
 
-      Then, you only need run a scripts and you can build your owner system easily.
-      Note, please don't run this scripts as root. Last, you need run scripts,
-      such as:
+      You need only run the scripts in order to build your own system with ease.
+      Note: please don't run these scripts as root.
+      Lastly, you need run scripts, such as:
      
       ```
        ./build.sh
@@ -98,8 +100,8 @@ Funny with your ideas and build your own Linux system.
 
 ### Maintain OrangePi
 
-  We offer different repertory to maintain OrangePi, you can also push your patch
-  into OrangePi build system, more detail:
+  We offer a different repository to maintain OrangePi. You can also push your patch
+  into OrangePi build system, more details:
 
   * OrangePi 2G-IOT/i96
 
@@ -121,7 +123,7 @@ Funny with your ideas and build your own Linux system.
   * OrangePi PC2/Prima/Zero plus2
 
     OrangePi PC2/Prima/Zero plus build on Allwinner H5 Soc, the offfical maintain
-    repertory as follow:
+    repository as follow:
 
     kernel:
     
@@ -154,8 +156,8 @@ Funny with your ideas and build your own Linux system.
 
   * OrangePi Win/Win plus
 
-    OrangePi Win/Win plus build on Allwinner A64 Soc, the offfical maintain
-    repertory as follow:
+    OrangePi Win/Win plus build on Allwinner A64 Soc, the offfically maintained
+    repository as follows:
 
     kernel:
     
@@ -188,8 +190,8 @@ Funny with your ideas and build your own Linux system.
 
   * OrangePi Zero
 
-    OrangePi Zero plus build on Allwinner H2+ Soc, the offfical maintain
-    repertory as follow:
+    OrangePi Zero plus build on Allwinner H2+ Soc, the offfically maintained
+    repository as follows:
 
     kernel:
     
@@ -223,7 +225,7 @@ Funny with your ideas and build your own Linux system.
   * OrangePi Plus2/Plus 2E/One/PC/2/Lite/PC Plus/Mini2
 
     OrangePi Plus2/Plus 2E/One/PC/2/Lite/PC Plus/Mini2 plus build on Allwinner H3 Soc,
-    the offfical maintain repertory as follow:
+    the offfically maintained repository as follows:
 
     kernel:
     
@@ -258,7 +260,7 @@ Funny with your ideas and build your own Linux system.
   * OrangePi OnePlus/Lite2
 
     OrangePi OnePlus/Lite2 build on Allwinner H6 Soc,
-    the offfical maintain repertory as follow:
+    the offfically maintained repository as follows:
 
     kernel:
     
