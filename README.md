@@ -9,7 +9,7 @@ Have fun with your ideas and build your own Linux system.
 
   * OrangePi PC2
  
-  * OrangePi Prima
+  * OrangePi Prime
  
   * OrangePi Win
 
