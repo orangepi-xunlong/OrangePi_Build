@@ -83,7 +83,16 @@ if [ $OPTION = "0" -o $OPTION = "1" ]; then
         ./H2SDK_BuildEnvironment.sh
     # OrangePi H3
     else
-        ./H3SDK_BuildEnvironment.sh
+	KERNEL=$(whiptail --title "OrangePi Build System" \
+    		--menu "$MENUSTR" 25 60 17 --cancel-button Finish --ok-button Select \
+    		"0"  "linux3.4" \
+    		"1"  "linux4.14" \
+    		3>&1 1>&2 2>&3)
+	if [ $KERNEL = "0" ]; then
+        	./H3SDK_BuildEnvironment.sh
+	else
+        	./H3SDK_Mainline_BuildEnvironment.sh
+	fi
     fi
 elif [ $OPTION = "2" ]; then
     echo "Download Image"
