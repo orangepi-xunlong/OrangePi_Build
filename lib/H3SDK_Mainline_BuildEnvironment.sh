@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# This script is used to build OrangePi H5 environment.
-# Write by: Buddy
-# Date:     2017-01-06
+# This script is used to build OrangePi H3 mainline kernel environment.
 
 if [ -z $TOP_ROOT ]; then
     TOP_ROOT=`cd .. && pwd`
