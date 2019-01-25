@@ -42,7 +42,8 @@ Have fun with your ideas and build your own Linux system.
   * OrangePi One Plus
   
   * OrangePi Lite2
-
+  
+  * OrangePi 3
 -----------------------------------------------------------------
 
 #### Using OrangePi Build System
@@ -257,7 +258,7 @@ You need only follow these steps:
       https://github.com/orangepi-xunlong/OrangePiH3_toolchain.git
     ```
 
-  * OrangePi OnePlus/Lite2
+  * OrangePi OnePlus/Lite2/3
 
     OrangePi OnePlus/Lite2 build on Allwinner H6 Soc,
     the offfically maintained repository as follows:
