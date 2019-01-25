@@ -70,7 +70,7 @@ if [ $OPTION = "0" -o $OPTION = "1" ]; then
     elif [ $DISTRO = "12" -o $DISTRO = "13" ]; then
         ./A64SDK_BuildEnvironment.sh
     # OrangePi H6
-    elif [ $DISTRO = "17" -o $DISTRO = "18" -o $DISTRO = "19"]; then
+    elif [ $DISTRO = "17" -o $DISTRO = "18" -o $DISTRO = "19" ]; then
         ./H6SDK_BuildEnvironment.sh
     # OrangePi RDA
     elif [ $DISTRO = "15" ]; then
