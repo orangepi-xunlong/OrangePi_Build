@@ -44,6 +44,11 @@ Have fun with your ideas and build your own Linux system.
   * OrangePi Lite2
   
   * OrangePi 3
+
+  * OrangePi RK3399
+
+  * OrangePi 4G-IOT
+
 -----------------------------------------------------------------
 
 #### Using OrangePi Build System
@@ -288,5 +293,77 @@ You need only follow these steps:
     ```
     
     toolchain
+
     ```
       https://github.com/orangepi-xunlong/OrangePiH6_toolchain.git
+    ```
+
+  * OrangePi RK3399 
+
+    OrangePi RK3399 build on Rockchip RK3399 Soc,
+    the offfically maintained repository as follows:
+
+    kernel:
+
+    ```
+      https://github.com/orangepi-xunlong/OrangePiRK3399_kernel.git
+    ```
+
+    u-boot:
+
+    ```
+      https://github.com/orangepi-xunlong/OrangePiRK3399_uboot.git
+    ```
+
+    build scripts
+
+    ```
+      https://github.com/orangepi-xunlong/OrangePiRK3399_scripts.git
+    ```
+
+    external binary file
+
+    ```
+      https://github.com/orangepi-xunlong/OrangePiRK3399_external.git
+    ```
+
+    toolchain
+
+    ```
+      https://github.com/orangepi-xunlong/OrangePiRK3399_toolchain.git
+    ```
+
+  * OrangePi 4G-IOT
+
+    OrangePi 4G-IOT build on MTK6737  Soc,
+    the offfically maintained repository as follows:
+
+    kernel:
+
+    ```
+      https://github.com/orangepi-xunlong/OrangePi4G-iot_kernel.git
+    ```
+
+    u-boot:
+
+    ```
+      https://github.com/orangepi-xunlong/OrangePi4G-iot_bootloader.git
+    ```
+
+    build scripts
+
+    ```
+      https://github.com/orangepi-xunlong/OrangePi4G-iot_scripts.git
+    ```
+
+    external binary file
+
+    ```
+      https://github.com/orangepi-xunlong/OrangePi4G-iot_external.git
+    ```
+
+    toolchain
+
+    ```
+      https://github.com/orangepi-xunlong/OrangePi4G-iot_toolchain.git
+    ```
