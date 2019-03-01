@@ -75,7 +75,16 @@ if [ $OPTION = "0" -o $OPTION = "1" ]; then
         ./A64SDK_BuildEnvironment.sh
     # OrangePi H6
     elif [ $DISTRO = "17" -o $DISTRO = "18" -o $DISTRO = "19" ]; then
-        ./H6SDK_BuildEnvironment.sh
+	KERNEL=$(whiptail --title "OrangePi Build System" \
+                --menu "$MENUSTR" 25 60 17 --cancel-button Finish --ok-button Select \
+                "0"  "linux3.10" \
+                "1"  "linux4.9" \
+                3>&1 1>&2 2>&3)
+        if [ $KERNEL = "0" ]; then
+        	./H6SDK_BuildEnvironment.sh
+        else
+                ./H6SDK_Linux4_9_BuildEnvironment.sh
+        fi
     # OrangePi RDA
     elif [ $DISTRO = "15" ]; then
         ./RDASDK_BuildEnvironment.sh
