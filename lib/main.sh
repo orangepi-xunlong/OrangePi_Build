@@ -25,6 +25,7 @@ set -e
 # OrangePi Lite2         Allwinner H6
 # OrangePi 3         	 Allwinner H6
 # OrangePi RK3399		 RK3399
+# OrangePi 4G-IOT		 MT6737
 # OrangePi 2G-IOT        RDA8810
 # OrangePi i96           RDA8810
 
@@ -62,6 +63,7 @@ DISTRO=$(whiptail --title "OrangePi Build System" \
     "18"  "orangepi Lite2" \
     "19"  "orangepi 3" \
     "20"  "orangepi RK3399" \
+    "21"  "orangepi 4G-iot" \
     3>&1 1>&2 2>&3)
 
 if [ $OPTION = "0" -o $OPTION = "1" ]; then
@@ -86,6 +88,9 @@ if [ $OPTION = "0" -o $OPTION = "1" ]; then
     # OrangePi RK3399
     elif [ $DISTRO = "20" ]; then
         ./RK3399SDK_BuildEnvironment.sh
+    # OrangePi 4G-iot
+    elif [ $DISTRO = "21" ]; then
+        ./4G-iotSDK_BuildEnvironment.sh
     # OrangePi H3
     else
 	KERNEL=$(whiptail --title "OrangePi Build System" \
