@@ -12,7 +12,7 @@ if [ -z $TOP_ROOT ]; then
 fi
 
 # Github
-Linux4_9_GITHUB="https://github.com/orangepi-xunlong/OrangePiH6_Linux4.9.git"
+Linux4_9_GITHUB="https://github.com/orangepi-xunlong/OrangePiH6_Linux4_9.git"
 uboot_GITHUB="https://github.com/orangepi-xunlong/OrangePiH6_uboot.git"
 scripts_GITHUB="https://github.com/orangepi-xunlong/OrangePiH6_scripts.git"
 external_GITHUB="https://github.com/orangepi-xunlong/OrangePiH6_external.git"
@@ -20,7 +20,7 @@ toolchain="https://codeload.github.com/orangepi-xunlong/OrangePiH6_toolchain/zip
 
 # Prepare dirent
 Prepare_dirent=(
-Linux4.9
+Linux4_9
 uboot
 scripts
 external
@@ -105,7 +105,7 @@ function install_toolchain()
         curl -C - -o ./toolchain $toolchain
         unzip $TOP_ROOT/OrangePiH6_Linux4.9/.tmp_toolchain/toolchain
         mkdir -p $TOP_ROOT/OrangePiH6_Linux4.9/toolchain
-        mv $TOP_ROOT/OrangePiH6_Linux4.9/.tmp_toolchain/OrangePiH6__toolchain-master $TOP_ROOT/OrangePiH6_Linux4.9/toolchain/toolchain_tar
+        mv $TOP_ROOT/OrangePiH6_Linux4.9/.tmp_toolchain/OrangePiH6_toolchain-master $TOP_ROOT/OrangePiH6_Linux4.9/toolchain/toolchain_tar
         rm -rf $TOP_ROOT/OrangePiH6_Linux4.9/.tmp_toolchain
         cd -
     fi
