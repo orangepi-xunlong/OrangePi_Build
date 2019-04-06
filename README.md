@@ -83,7 +83,7 @@ You need only follow these steps:
 
       If you use "OrangePi PC2/Prima/Zero plus2", rename the folder: "OrangePiH5"
      
-      If you use "OrangePi OnePlus/Lite2", rename the folder: "OrangePiH6"
+      If you use "OrangePi OnePlus/Lite2/3", rename the folder: "OrangePiH6"
 
       If you use "OrangePi Win/Win plus", rename the folder: "OrangePiA64"
 
