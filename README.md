@@ -266,7 +266,7 @@ You need only follow these steps:
   * OrangePi OnePlus/Lite2/3
 
     OrangePi OnePlus/Lite2 build on Allwinner H6 Soc,
-    the offically maintained repository as follows:
+    the officially maintained repository as follows:
 
     kernel:
     
