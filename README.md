@@ -49,6 +49,8 @@ Have fun with your ideas and build your own Linux system.
 
   * OrangePi 4G-IOT
 
+  * OrangePi 3G-IOT
+
 -----------------------------------------------------------------
 
 #### Using OrangePi Build System
@@ -366,4 +368,39 @@ You need only follow these steps:
 
     ```
       https://github.com/orangepi-xunlong/OrangePi4G-iot_toolchain.git
+    ```
+	
+  * OrangePi 3G-IOT
+
+    OrangePi 3G-IOT build on MT6572  Soc,
+    the offically maintained repository as follows:
+
+    kernel:
+
+    ```
+      https://github.com/orangepi-xunlong/OrangePi3G-iot_kernel.git
+    ```
+
+    u-boot:
+
+    ```
+      https://github.com/orangepi-xunlong/OrangePi3G-iot_bootloader.git
+    ```
+
+    build scripts
+
+    ```
+      https://github.com/orangepi-xunlong/OrangePi3G-iot_scripts.git
+    ```
+
+    external binary file
+
+    ```
+      https://github.com/orangepi-xunlong/OrangePi3G-iot_external.git
+    ```
+
+    toolchain
+
+    ```
+      https://github.com/orangepi-xunlong/OrangePi3G-iot_toolchain.git
     ```
