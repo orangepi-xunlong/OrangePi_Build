@@ -42,7 +42,7 @@ OPTION=$(whiptail --title "OrangePi Build System" \
     3>&1 1>&2 2>&3)
 
 DISTRO=$(whiptail --title "OrangePi Build System" \
-    --menu "$MENUSTR" 25 60 17 --cancel-button Finish --ok-button Select \
+    --menu "$MENUSTR" 32 60 23 --cancel-button Finish --ok-button Select \
     "0"   "orangepi PC2" \
     "1"   "orangepi Zero" \
     "2"   "orangepi PC Plus" \
@@ -78,7 +78,7 @@ if [ $OPTION = "0" -o $OPTION = "1" ]; then
     # OrangePi H6
     elif [ $DISTRO = "17" -o $DISTRO = "18" -o $DISTRO = "19" ]; then
 	KERNEL=$(whiptail --title "OrangePi Build System" \
-                --menu "$MENUSTR" 25 60 17 --cancel-button Finish --ok-button Select \
+                --menu "$MENUSTR" 10 40 3 --cancel-button Finish --ok-button Select \
                 "0"  "linux3.10" \
                 "1"  "linux4.9" \
                 3>&1 1>&2 2>&3)
@@ -108,7 +108,7 @@ if [ $OPTION = "0" -o $OPTION = "1" ]; then
     # OrangePi H3
     else
 	KERNEL=$(whiptail --title "OrangePi Build System" \
-    		--menu "$MENUSTR" 25 60 17 --cancel-button Finish --ok-button Select \
+    		--menu "$MENUSTR" 10 40 3 --cancel-button Finish --ok-button Select \
     		"0"  "linux3.4" \
     		"1"  "linux4.14" \
     		3>&1 1>&2 2>&3)
