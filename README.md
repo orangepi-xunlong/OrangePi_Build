@@ -85,7 +85,7 @@ You need only follow these steps:
 
       If you use "OrangePi PC2/Prima/Zero plus2", rename the folder: "OrangePiH5"
      
-      If you use "OrangePi OnePlus/Lite2", rename the folder: "OrangePiH6"
+      If you use "OrangePi OnePlus/Lite2/3", rename the folder: "OrangePiH6"
 
       If you use "OrangePi Win/Win plus", rename the folder: "OrangePiA64"
 
@@ -113,8 +113,8 @@ You need only follow these steps:
 
   * OrangePi 2G-IOT/i96
 
-    OrangePi 2G-IOT/i96 build on Allwinner RDA8810 Soc, the offical maintain
-    repertory as follow:
+    OrangePi 2G-IOT/i96 build on Allwinner RDA8810 Soc, the offically maintained
+    repository as follows:
 
     kernel:
     
@@ -130,8 +130,8 @@ You need only follow these steps:
 
   * OrangePi PC2/Prima/Zero plus2
 
-    OrangePi PC2/Prima/Zero plus build on Allwinner H5 Soc, the offical maintain
-    repository as follow:
+    OrangePi PC2/Prima/Zero plus build on Allwinner H5 Soc, the offically maintained
+    repository as follows:
 
     kernel:
     
@@ -233,7 +233,7 @@ You need only follow these steps:
   * OrangePi Plus2/Plus 2E/One/PC/2/Lite/PC Plus/Mini2
 
     OrangePi Plus2/Plus 2E/One/PC/2/Lite/PC Plus/Mini2 plus build on Allwinner H3 Soc,
-    the offically maintained repository as follows:
+    the officially maintained repository as follows:
 
     kernel:
     
@@ -268,7 +268,7 @@ You need only follow these steps:
   * OrangePi OnePlus/Lite2/3
 
     OrangePi OnePlus/Lite2 build on Allwinner H6 Soc,
-    the offically maintained repository as follows:
+    the officially maintained repository as follows:
 
     kernel:
     
@@ -303,7 +303,7 @@ You need only follow these steps:
   * OrangePi RK3399 
 
     OrangePi RK3399 build on Rockchip RK3399 Soc,
-    the offically maintained repository as follows:
+    the officially maintained repository as follows:
 
     kernel:
 
@@ -338,7 +338,7 @@ You need only follow these steps:
   * OrangePi 4G-IOT
 
     OrangePi 4G-IOT build on MTK6737  Soc,
-    the offically maintained repository as follows:
+    the officially maintained repository as follows:
 
     kernel:
 
