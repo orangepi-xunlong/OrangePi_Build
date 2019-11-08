@@ -48,8 +48,8 @@ DISTRO=$(whiptail --title "OrangePi Build System" \
     "2"   "orangepi PC Plus" \
     "3"   "orangepi Plus2e" \
     "4"   "orangepi Lite" \
-    "5"   "orangepi Plus2(H5)" \
-    "6"   "orangepi Plus2(H3)" \
+    "5"   "orangepi Zero Plus2(H5)" \
+    "6"   "orangepi Zero Plus2(H3)" \
     "7"   "orangepi Plus" \
     "8"   "orangepi PC" \
     "9"   "orangepi One" \
