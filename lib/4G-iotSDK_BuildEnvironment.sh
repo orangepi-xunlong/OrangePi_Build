@@ -24,10 +24,6 @@ external
 toolchain
 )
 
-# Change to TOP dirent
-cd $TOP_ROOT/..
-TOP_ROOT="`pwd`"
-
 if [ ! -d $TOP_ROOT/OrangePi4G-iot ]; then
     mkdir $TOP_ROOT/OrangePi4G-iot
 fi

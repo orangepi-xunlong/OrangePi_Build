@@ -6,7 +6,7 @@ set -e
 # Date:  2017-01-05
 
 # Support List
-# Board Name         ||  Platform
+# Board Name             Platform
 # OrangePi PC2           Allwinner H5
 # OrangePi Prime         Allwinner H5
 # OrangePi Win           Allwinner A64
@@ -24,21 +24,21 @@ set -e
 # OrangePi One Plus      Allwinner H6
 # OrangePi Lite2         Allwinner H6
 # OrangePi 3         	 Allwinner H6
-# OrangePi RK3399		 RK3399
-# OrangePi 4G-IOT		 MT6737
-# OrangePi 3G-IOT		 MT6572
+# OrangePi RK3399	 RK3399
+# OrangePi 4G-IOT	 MT6737
+# OrangePi 3G-IOT	 MT6572
 # OrangePi 2G-IOT        RDA8810
 # OrangePi i96           RDA8810
 
 whiptail --title "OrangePi Build System" --msgbox \
- "`figlet OrangePi` It's funny to build owner Linux system!        Let's go to Linux World with OrangePi" \
+ "`figlet OrangePi` It's funny to build owner Linux system!        Let's go to Linux World with Orange Pi" \
           15 50 0
 
 MENUSTR="Plase select build option"
 
 OPTION=$(whiptail --title "OrangePi Build System" \
     --menu "$MENUSTR" 10 50 3 --cancel-button Finish --ok-button Select \
-    "0"   "Build system with kernel/uboot/rootfs" \
+    "0"   "Build system with uboot/kernel/rootfs/images" \
     3>&1 1>&2 2>&3)
 
 DISTRO=$(whiptail --title "OrangePi Build System" \
@@ -109,8 +109,8 @@ if [ $OPTION = "0" -o $OPTION = "1" ]; then
     else
 	KERNEL=$(whiptail --title "OrangePi Build System" \
     		--menu "$MENUSTR" 10 40 3 --cancel-button Finish --ok-button Select \
-    		"0"  "linux3.4" \
-    		"1"  "linux4.14" \
+    		"0"  "linux3.4.113" \
+    		"1"  "linux5.3.5" \
     		3>&1 1>&2 2>&3)
 	if [ $KERNEL = "0" ]; then
         	./H3SDK_BuildEnvironment.sh

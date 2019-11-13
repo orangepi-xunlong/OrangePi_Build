@@ -25,10 +25,6 @@ scripts
 external
 )
 
-# Change to TOP dirent
-cd $TOP_ROOT/..
-TOP_ROOT="`pwd`"
-
 if [ ! -d $TOP_ROOT/OrangePiA64 ]; then
     mkdir $TOP_ROOT/OrangePiA64
 fi

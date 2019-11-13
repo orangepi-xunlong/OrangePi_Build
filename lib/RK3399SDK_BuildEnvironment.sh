@@ -24,10 +24,6 @@ toolchain
 external
 )
 
-# Change to TOP dirent
-cd $TOP_ROOT/..
-TOP_ROOT="`pwd`"
-
 if [ ! -d $TOP_ROOT/OrangePiRK3399 ]; then
     mkdir $TOP_ROOT/OrangePiRK3399
 fi

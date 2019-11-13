@@ -26,10 +26,6 @@ scripts
 external
 )
 
-# Change to TOP dirent
-cd $TOP_ROOT/..
-TOP_ROOT="`pwd`"
-
 if [ ! -d $TOP_ROOT/OrangePiH6_Linux4.9 ]; then
     mkdir $TOP_ROOT/OrangePiH6_Linux4.9
 fi

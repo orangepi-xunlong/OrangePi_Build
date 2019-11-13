@@ -23,10 +23,6 @@ external
 scripts
 )
 
-# Change to TOP dirent
-cd $TOP_ROOT/..
-TOP_ROOT="`pwd`"
-
 if [ ! -d $TOP_ROOT/OrangePiRDA ]; then
     mkdir $TOP_ROOT/OrangePiRDA
 fi
