@@ -93,12 +93,6 @@ if [ $OPTION = "0" ]; then
         "${TOP_DIR}"/lib/3G-iotSDK_BuildEnvironment.sh
     # OrangePi H3
     else
-	KERNEL_VER=$(whiptail --title "OrangePi Build System" \
-    		--menu "$MENUSTR" 10 40 3 --cancel-button Finish --ok-button Select \
-    		"0"  "linux3.4.113" \
-    		"1"  "linux5.3.5" \
-    		3>&1 1>&2 2>&3)
-
 	source "${TOP_DIR}"/lib/H3SDK_BuildEnvironment.sh
 	download_code
     fi
