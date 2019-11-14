@@ -52,6 +52,7 @@ DISTRO=$(whiptail --title "OrangePi Build System" \
     "20"  "orangepi RK3399" \
     "21"  "orangepi 4G-iot" \
     "22"  "orangepi 3G-iot" \
+    "23"  "orangepi R1" \
     3>&1 1>&2 2>&3)
 
 if [ $OPTION = "0" ]; then
@@ -80,8 +81,9 @@ if [ $OPTION = "0" ]; then
     elif [ $DISTRO = "16" ]; then
         "${TOP_DIR}"/lib/i96SDK_BuildEnvironment.sh
     # OrangePi H2
-    elif [ $DISTRO = "1" ]; then
-        "${TOP_DIR}"/lib/H2SDK_BuildEnvironment.sh
+    elif [ $DISTRO = "1" -o $DISTRO = "23" ]; then
+	source "${TOP_DIR}"/lib/H3SDK_BuildEnvironment.sh
+	download_code
     # OrangePi RK3399
     elif [ $DISTRO = "20" ]; then
         "${TOP_DIR}"/lib/RK3399SDK_BuildEnvironment.sh
