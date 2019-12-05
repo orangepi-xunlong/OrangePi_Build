@@ -18,7 +18,7 @@ else
 	TOOLCHAIN=("toolchain" "arm-linux-gnueabihf-7.2.1")
 fi
 
-SCRIPTS=("scripts" "master")
-EXTERNAL=("external" "master")
+SCRIPTS=("scripts" "orangepi-h3_v1.0")
+EXTERNAL=("external" "orangepi-h3_v1.0")
 
 ORANGEPI_GIT="https://github.com/orangepi-xunlong"
