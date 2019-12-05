@@ -3,7 +3,7 @@
 get_root()
 {
 	for ((i = 0; i < 5; i++)); do
-		PASSWD=$(whiptail --title "OrangePi Build System" \
+		PASSWD=$(whiptail --title "Orange Pi Build System" \
 	               --passwordbox "Enter your root password. Note! Don't use root to run this scripts" 10 60 3>&1 1>&2 2>&3)
 	
 	        if [ $i = "4" ]; then
@@ -18,7 +18,7 @@ EOF
 		then
 			i=10
 	        else
-		        whiptail --title "OrangePi Build System" --msgbox "Invalid password, Pls input corrent password" \
+		        whiptail --title "Orange Pi Build System" --msgbox "Invalid password, Pls input corrent password" \
 				            10 40 0 --cancel-button Exit --ok-button Retry
 		fi
 	done
@@ -44,11 +44,11 @@ download_code()
 {
 	PLAT_DIR="$(realpath "${TOP_DIR}"/../"${PLATFORM}")"
 
-	KERNEL_GIT="${ORANGEPI_GIT}/"${KERNEL}".git"
-	UBOOT_GIT="${ORANGEPI_GIT}/"${UBOOT}".git"
-	SCRIPTS_GIT="${ORANGEPI_GIT}/"${SCRIPTS}".git"
-	EXTERNAL_GIT="${ORANGEPI_GIT}/"${EXTERNAL}".git"
-	TOOLCHAIN_GIT="${ORANGEPI_GIT}/"${TOOLCHAIN}".git"
+	KERNEL_GIT="${ORANGEPI_GIT}/"${KERNEL[0]}".git"
+	UBOOT_GIT="${ORANGEPI_GIT}/"${UBOOT[0]}".git"
+	SCRIPTS_GIT="${ORANGEPI_GIT}/"${SCRIPTS[0]}".git"
+	EXTERNAL_GIT="${ORANGEPI_GIT}/"${EXTERNAL[0]}".git"
+	TOOLCHAIN_GIT="${ORANGEPI_GIT}/"${TOOLCHAIN[0]}".git"
 
 	SDK_GIT=(
 	${KERNEL_GIT}
@@ -56,6 +56,14 @@ download_code()
 	${SCRIPTS_GIT}
 	${EXTERNAL_GIT}
 	${TOOLCHAIN_GIT}
+	)
+	
+	SDK_BR=(
+	${KERNEL[1]}
+	${UBOOT[1]}
+	${SCRIPTS[1]}
+	${EXTERNAL[1]}
+	${TOOLCHAIN[1]}
 	)
 
 	SDK_DIR=(
@@ -74,7 +82,7 @@ download_code()
 	do
 		if [ ! -d "${PLAT_DIR}/${SDK_DIR[i]}" ]; then
             		echo -e "\e[1;31m Download from : "${SDK_GIT[i]}" \e[0m"
-			git clone --depth=1 "${SDK_GIT[i]}" "${PLAT_DIR}/${SDK_DIR[i]}"
+			git clone --depth=1 "${SDK_GIT[i]}" "${PLAT_DIR}/${SDK_DIR[i]}" --branch "${SDK_BR[i]}"
         	else
             		echo -e "\e[1;31m Update from : "${SDK_GIT[i]}" \e[0m"
             		cd "${PLAT_DIR}/${SDK_DIR[i]}"
@@ -87,7 +95,7 @@ download_code()
 		ln -sv "${PLAT_DIR}"/scripts/build.sh "${PLAT_DIR}"/build.sh    
 	fi
 
-	whiptail --title "OrangePi Build System" --msgbox \
-		"`figlet OrangePi` Succeed to Create OrangePi Build System!        Path: "${PLAT_DIR}"" 15 50 0
+	whiptail --title "Orange Pi Build System" --msgbox \
+		"`figlet Orange Pi` Succeed to download "${PLATFORM}" build system!        Path: "${PLAT_DIR}"" 15 50 0
 	clear	
 }

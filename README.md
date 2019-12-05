@@ -1,11 +1,11 @@
 OrangePi Build System
 ---------------------------------------
 
-Welcome to OrangePi Build System! A good place to start in the Linux World with OrangePi!
+Welcome to Orange Pi Build System! A good place to start in the Linux world with Orange Pi!
 
 Have fun with your ideas and build your own Linux system.
 
-#### OrangePi Build System supports:
+#### Orange Pi Build System supports:
 
   * OrangePi PC2
  
