@@ -53,7 +53,7 @@ Have fun with your ideas and build your own Linux system.
   
   * OrangePi 4
   
-  * OrangePi 4b
+  * OrangePi 4B
   
   * OrangePi RK3399
   
@@ -88,7 +88,7 @@ You need only follow these steps:
         git clone https://github.com/orangepi-xunlong/OrangePi_Build.git
       ```
       
-      This script builds different OrangePi distros.
+      This script builds different Orange Pi distros.
       After downloading this repo, change dir to "OrangePi_Build"
       and run build scripts:
       
@@ -101,23 +101,29 @@ You need only follow these steps:
       and scripts will download the source code that contains the appropriate external, kernel, toolchain, scripts and uboot folders. The last, create the build.sh script link which use to start the build system.
 
       It may take some time, so please be patient.
-      After this finishes, you will get a new directory. Change to the new directory.
+      After this finishes, you will get a new directory. Change to the new directory: 
 
-      If you use "OrangePi PC2/Prime/Zero plus2", rename the folder: "OrangePiH5"
-     
-      If you use "OrangePi OnePlus/Lite2/3", rename the folder: "OrangePiH6" or "OrangePiH6_Linux4.9" or "OrangePiH6_mainline"
+      For **OrangePi Zero/R1**, the folder is **OrangePiH2** or **OrangePiH2_mainline**
 
-      If you use "OrangePi Win/Win plus", rename the folder: "OrangePiA64"
+      For **OrangePi One/Lite/Pc/PcPlus/Plus2E/ZeroPlus2**, the folder is **OrangePiH3** or **OrangePiH3_mainline**
 
-      If you use "OrangePi Zero/R1", rename the folder: "OrangePiH2" or "OrangePiH2_mainline"
+      For **OrangePi Pc2/Prime/ZeroPlus2H5**, the folder is **OrangePiH5**
 
-      If you use "OrangePi One/Lite/Pc/PcPlus/Plus2E/ZeroPlus2", rename the folder: "OrangePiH3" or "OrangePiH3_mainline"
+      For **OrangePi Win/WinPlus**, the folder is **OrangePiA64**
 
+      For **OrangePi OnePlus/Lite2/3**, the folder is **OrangePiH6_Linux4.9** or **OrangePiH6_mainline**
 
-   2. Build  your own  Linux Distro for Orange Pi system
+      For **OrangePi OrangePi 4/4B/RK3399**, the folder is **OrangePiRK3399** or **OrangePiRK3399_Pi4**
 
-      You need only run the scripts in order to build your own system with ease.
-      Lastly, you need run scripts, such as:
+      For **OrangePi 2G-IOT/I96**, the folder is **OrangePiRDA**
+
+      For **OrangePi 3G-IOT**, the folder is **OrangePi3G-iot**
+
+      For **OrangePi 4G-IOT**, the folder is **OrangePi4G-iot**
+
+   2. Build  your own linux distro for Orange Pi system
+ 
+      Run builsh.sh script, select the action you want to perform:
      
       ```
        ./build.sh
@@ -196,7 +202,7 @@ You need only follow these steps:
     [toolchain](https://github.com/orangepi-xunlong/toolchain/tree/aarch64-linux-gnu-7.4.1)
     [uboot](https://github.com/orangepi-xunlong/mainline_uboot/tree/orangepi-h6)
     
-  * OrangePi 4/4b
+  * OrangePi 4/4B
 
     OrangePiRK3399_Pi4: 
     [kernel](https://github.com/orangepi-xunlong/OrangePiRK3399_kernel.git)
