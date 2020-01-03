@@ -42,6 +42,12 @@ prepare_tools()
 # Download Source Code from Github
 download_code()
 {
+	set -x
+
+	if [ ! -d "${TOP_DIR}"/../"${PLATFORM}" ]; then
+	    mkdir -p "${TOP_DIR}"/../"${PLATFORM}"
+	fi
+
 	PLAT_DIR="$(realpath "${TOP_DIR}"/../"${PLATFORM}")"
 
 	KERNEL_GIT="${ORANGEPI_GIT}/"${KERNEL[0]}".git"
@@ -73,10 +79,6 @@ download_code()
 	external
 	toolchain
 	)
-
-	if [ ! -d "${PLAT_DIR}" ]; then
-	    mkdir "${PLAT_DIR}"
-	fi
 
 	for ((i = 0; i < 5; i++))
 	do
