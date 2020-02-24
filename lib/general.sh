@@ -42,8 +42,6 @@ prepare_tools()
 # Download Source Code from Github
 download_code()
 {
-	set -x
-
 	if [ ! -d "${TOP_DIR}"/../"${PLATFORM}" ]; then
 	    mkdir -p "${TOP_DIR}"/../"${PLATFORM}"
 	fi
