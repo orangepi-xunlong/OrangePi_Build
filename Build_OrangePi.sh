@@ -37,18 +37,19 @@ BOARD=$(whiptail --title "Orange Pi Build System" \
 	"8"   "Orange Pi Zero Plus2(H3)" \
 	"9"   "Orange Pi PC2" \
 	"10"  "Orange Pi Prime" \
-	"11"  "Orange Pi Zero Plus2(H5)" \
-	"12"  "Orange Pi Win" \
-	"13"  "Orange Pi Win plus" \
-	"14"  "Orange Pi 3" \
-	"15"  "Orange Pi Lite2" \
-	"16"  "Orange Pi One Plus" \
-	"17"  "Orange Pi 4" \
-	"18"  "Orange Pi RK3399" \
-	"19"  "Orange Pi I96" \
-	"20"  "Orange Pi 2G-IOT" \
-	"21"  "Orange Pi 3G-iot" \
-	"22"  "Orange Pi 4G-iot" \
+	"11"  "Orange Pi Zero Plus" \
+	"12"  "Orange Pi Zero Plus2(H5)" \
+	"13"  "Orange Pi Win" \
+	"14"  "Orange Pi Win plus" \
+	"15"  "Orange Pi 3" \
+	"16"  "Orange Pi Lite2" \
+	"17"  "Orange Pi One Plus" \
+	"18"  "Orange Pi 4" \
+	"19"  "Orange Pi RK3399" \
+	"20"  "Orange Pi I96" \
+	"21"  "Orange Pi 2G-IOT" \
+	"22"  "Orange Pi 3G-iot" \
+	"23"  "Orange Pi 4G-iot" \
 	3>&1 1>&2 2>&3)
 
 	case "${BOARD}" in
@@ -60,33 +61,34 @@ BOARD=$(whiptail --title "Orange Pi Build System" \
 			source "${TOP_DIR}"/lib/H3SDK_BuildEnvironment.sh
 			download_code
 			;;
-		"9" | "10" | "11") #H5
-        		"${TOP_DIR}"/lib/H5SDK_BuildEnvironment.sh
+		"9" | "10" | "11" | "12") #H5
+			source "${TOP_DIR}"/lib/H5SDK_BuildEnvironment.sh
+			download_code
 			;;
-		"12" | "13") #A64
+		"13" | "14") #A64
         		"${TOP_DIR}"/lib/A64SDK_BuildEnvironment.sh
 			;;
-		"14" | "15" | "16") #H6
+		"15" | "16" | "17") #H6
 			source "${TOP_DIR}"/lib/H6SDK_BuildEnvironment.sh
 			download_code
 			;;
-		"17" | "18") #RK3399
+		"18" | "19") #RK3399
         		source "${TOP_DIR}"/lib/RK3399SDK_BuildEnvironment.sh
 			download_code
 			;;
-		"19") #I96
+		"20") #I96
         		"${TOP_DIR}"/lib/i96SDK_BuildEnvironment.sh
 			;;
-		"20") #2G-IOT
+		"21") #2G-IOT
         		"${TOP_DIR}"/lib/RDASDK_BuildEnvironment.sh
 			;;
-		"21") #3G-IOT
+		"22") #3G-IOT
         		"${TOP_DIR}"/lib/3G-iotSDK_BuildEnvironment.sh
 			;;
-		"22") #4G-IOT
+		"23") #4G-IOT
         		"${TOP_DIR}"/lib/4G-iotSDK_BuildEnvironment.sh
 			;;
-		"*") # Other
+		*) # Other
     			echo "Unsupport Board!!!"
 			;;
 	esac
