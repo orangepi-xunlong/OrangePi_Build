@@ -19,7 +19,9 @@ Have fun with your ideas and build your own Linux system.
 
   * OrangePi Lite			
 	
-  * OrangePi Pc				
+  * OrangePi Pc	
+  
+  * OrangePi Plus		
 
   * OrangePi Pc Plus			
 
@@ -31,7 +33,9 @@ Have fun with your ideas and build your own Linux system.
 
   * OrangePi Pc 2			
 
-  * OrangePi Prime			
+  * OrangePi Prime	
+  
+  * OrangePi Zero Plus
 
   * OrangePi Zero Plus2 H5	
   
@@ -107,7 +111,7 @@ You need only follow these steps:
 
       For **OrangePi One/Lite/Pc/PcPlus/Plus2E/ZeroPlus2**, the folder is **OrangePiH3** or **OrangePiH3_mainline**
 
-      For **OrangePi Pc2/Prime/ZeroPlus2H5**, the folder is **OrangePiH5**
+      For **OrangePi Pc2/Prime/ZeroPlus/ZeroPlus2H5**, the folder is **OrangePiH5**
 
       For **OrangePi Win/WinPlus**, the folder is **OrangePiA64**
 
@@ -168,13 +172,13 @@ You need only follow these steps:
     [toolchain](https://github.com/orangepi-xunlong/toolchain/tree/arm-linux-gnueabihf-7.2.1)
     [uboot](https://github.com/orangepi-xunlong/mainline_uboot)
     
-  * OrangePi Pc2/Prime/ZeroPlus2H5
+  * OrangePi Pc2/Prime/ZeroPlus/ZeroPlus2H5
   
     OrangePiH5: 
-    [external](https://github.com/orangepi-xunlong/OrangePiH5_external)
+    [external](https://github.com/orangepi-xunlong/external)
     [kernel](https://github.com/orangepi-xunlong/OrangePiH5_kernel)
-    [scripts](https://github.com/orangepi-xunlong/OrangePiH5_scripts)
-    [toolchain](https://github.com/orangepi-xunlong/OrangePiH5_toolchain)
+    [scripts](https://github.com/orangepi-xunlong/scripts)
+    [toolchain](https://github.com/orangepi-xunlong/toolchain/tree/aarch64-linux-gnu-4.9)
     [uboot](https://github.com/orangepi-xunlong/OrangePiH5_uboot)
   
   * OrangePi Win/WinPlus
