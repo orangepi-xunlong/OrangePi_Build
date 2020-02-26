@@ -141,14 +141,14 @@ You need only follow these steps:
     OrangePiH2: 
     [external](https://github.com/orangepi-xunlong/external/tree/orangepi-h3_v1.0)
     [kernel](https://github.com/orangepi-xunlong/OrangePiH3_kernel)
-    [scripts](https://github.com/orangepi-xunlong/scripts/tree/orangepi-h3_v1.0)
+    [scripts](https://github.com/orangepi-xunlong/scripts/tree/orangepi-h2h3)
     [toolchain](https://github.com/orangepi-xunlong/toolchain/tree/arm-linux-gnueabi-1.13.1)
     [uboot](https://github.com/orangepi-xunlong/OrangePiH3_uboot)
    
     OrangePiH2_mainline: 
     [external](https://github.com/orangepi-xunlong/external/tree/orangepi-h3_v1.0)
     [kernel](https://github.com/orangepi-xunlong/mainline_kernel/tree/orangepi-h3)
-    [scripts](https://github.com/orangepi-xunlong/scripts/tree/orangepi-h3_v1.0)
+    [scripts](https://github.com/orangepi-xunlong/scripts/tree/orangepi-h2h3)
     [toolchain](https://github.com/orangepi-xunlong/toolchain/tree/arm-linux-gnueabihf-7.2.1)
     [uboot](https://github.com/orangepi-xunlong/mainline_uboot)
    
@@ -157,14 +157,14 @@ You need only follow these steps:
     OrangePiH3: 
     [external](https://github.com/orangepi-xunlong/external/tree/orangepi-h3_v1.0)
     [kernel](https://github.com/orangepi-xunlong/OrangePiH3_kernel)
-    [scripts](https://github.com/orangepi-xunlong/scripts/tree/orangepi-h3_v1.0)
+    [scripts](https://github.com/orangepi-xunlong/scripts/tree/orangepi-h2h3)
     [toolchain](https://github.com/orangepi-xunlong/toolchain/tree/arm-linux-gnueabi-1.13.1)
     [uboot](https://github.com/orangepi-xunlong/OrangePiH3_uboot)
     
     OrangePiH3_mainline: 
     [external](https://github.com/orangepi-xunlong/external/tree/orangepi-h3_v1.0)
     [kernel](https://github.com/orangepi-xunlong/mainline_kernel/tree/orangepi-h3)
-    [scripts](https://github.com/orangepi-xunlong/scripts/tree/orangepi-h3_v1.0)
+    [scripts](https://github.com/orangepi-xunlong/scripts/tree/orangepi-h2h3)
     [toolchain](https://github.com/orangepi-xunlong/toolchain/tree/arm-linux-gnueabihf-7.2.1)
     [uboot](https://github.com/orangepi-xunlong/mainline_uboot)
     
@@ -205,45 +205,45 @@ You need only follow these steps:
   * OrangePi 4/4B
 
     OrangePiRK3399_Pi4: 
-    [kernel](https://github.com/orangepi-xunlong/OrangePiRK3399_kernel.git)
-    [uboot](https://github.com/orangepi-xunlong/OrangePiRK3399_uboot.git)
-    [scripts](https://github.com/orangepi-xunlong/OrangePiRK3399_scripts/tree/orangepi_4)
     [external](https://github.com/orangepi-xunlong/OrangePiRK3399_external/tree/orangepi_4)
+    [kernel](https://github.com/orangepi-xunlong/OrangePiRK3399_kernel.git)
+    [scripts](https://github.com/orangepi-xunlong/OrangePiRK3399_scripts/tree/orangepi_4)
     [toolchain](https://github.com/orangepi-xunlong/toolchain/tree/aarch64-linux-gnu-6.3)
+    [uboot](https://github.com/orangepi-xunlong/OrangePiRK3399_uboot.git)  
     
   * OrangePi RK3399 
 
     OrangePiRK3399: 
-    [kernel](https://github.com/orangepi-xunlong/OrangePiRK3399_kernel/tree/linux4.4.103)
-    [uboot](https://github.com/orangepi-xunlong/OrangePiRK3399_uboot/tree/orangepi_rk3399)
-    [scripts](https://github.com/orangepi-xunlong/OrangePiRK3399_scripts.git)
     [external](https://github.com/orangepi-xunlong/OrangePiRK3399_external.git)
+    [kernel](https://github.com/orangepi-xunlong/OrangePiRK3399_kernel/tree/linux4.4.103)
+    [scripts](https://github.com/orangepi-xunlong/OrangePiRK3399_scripts.git)
     [toolchain](https://github.com/orangepi-xunlong/toolchain/tree/aarch64-linux-gnu-6.3)
+    [uboot](https://github.com/orangepi-xunlong/OrangePiRK3399_uboot/tree/orangepi_rk3399)
     
   * OrangePi 2G-IOT/i96
   
     OrangePiRDA: 
-    [kernel](https://github.com/orangepi-xunlong/OrangePiRDA_kernel.git)
-    [uboot](https://github.com/orangepi-xunlong/OrangePiRDA_kernel.git)
-    [scripts](https://github.com/orangepi-xunlong/OrangePiRDA_kernel.git)
     [external](https://github.com/orangepi-xunlong/OrangePiRDA_kernel.git)
+    [kernel](https://github.com/orangepi-xunlong/OrangePiRDA_kernel.git)
+    [scripts](https://github.com/orangepi-xunlong/OrangePiRDA_kernel.git)
     [toolchain](https://github.com/orangepi-xunlong/OrangePiRDA_kernel.git)
-   
+    [uboot](https://github.com/orangepi-xunlong/OrangePiRDA_kernel.git)
+    
   * OrangePi 3G-IOT
 
     OrangePi3G-iot: 
-    [kernel](https://github.com/orangepi-xunlong/OrangePi3G-iot_kernel.git)
-    [uboot](https://github.com/orangepi-xunlong/OrangePi3G-iot_bootloader.git)
-    [scripts](https://github.com/orangepi-xunlong/OrangePi3G-iot_scripts.git)
     [external](https://github.com/orangepi-xunlong/OrangePi3G-iot_external.git)
+    [kernel](https://github.com/orangepi-xunlong/OrangePi3G-iot_kernel.git)
+    [scripts](https://github.com/orangepi-xunlong/OrangePi3G-iot_scripts.git)
     [toolchain](https://github.com/orangepi-xunlong/OrangePi3G-iot_toolchain.git)
+    [uboot](https://github.com/orangepi-xunlong/OrangePi3G-iot_bootloader.git)
     
   * OrangePi 4G-IOT
 
     OrangePi4G-iot: 
-    [kernel](https://github.com/orangepi-xunlong/OrangePi4G-iot_kernel.git)
-    [uboot](https://github.com/orangepi-xunlong/OrangePi4G-iot_bootloader.git)
-    [scripts](https://github.com/orangepi-xunlong/OrangePi4G-iot_scripts.git)
     [external](https://github.com/orangepi-xunlong/OrangePi4G-iot_external.git)
+    [kernel](https://github.com/orangepi-xunlong/OrangePi4G-iot_kernel.git)
+    [scripts](https://github.com/orangepi-xunlong/OrangePi4G-iot_scripts.git)
     [toolchain](https://github.com/orangepi-xunlong/OrangePi4G-iot_toolchain.git)
-    
+    [uboot](https://github.com/orangepi-xunlong/OrangePi4G-iot_bootloader.git)
+ 
