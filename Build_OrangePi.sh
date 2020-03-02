@@ -66,7 +66,8 @@ BOARD=$(whiptail --title "Orange Pi Build System" \
 			download_code
 			;;
 		"13" | "14") #A64
-        		"${TOP_DIR}"/lib/A64SDK_BuildEnvironment.sh
+			source "${TOP_DIR}"/lib/A64SDK_BuildEnvironment.sh
+			download_code
 			;;
 		"15" | "16" | "17") #H6
 			source "${TOP_DIR}"/lib/H6SDK_BuildEnvironment.sh
