@@ -6,8 +6,8 @@ KERNEL_VER=$(whiptail --title "Orange Pi Build System" \
 	"2"  "mainline" \
         3>&1 1>&2 2>&3)
 
-SCRIPTS=("scripts" "master")
-EXTERNAL=("external" "master")
+SCRIPTS=("scripts" "orangepi-h6_v2.0.2")
+EXTERNAL=("external" "orangepi-h6_v2.0.2")
 TOOLCHAIN=("toolchain" "aarch64-linux-gnu-4.9")
 
 if [ "${KERNEL_VER}" = "0" ]; then
