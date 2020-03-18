@@ -74,20 +74,20 @@ BOARD=$(whiptail --title "Orange Pi Build System" \
 			download_code
 			;;
 		"18" | "19") #RK3399
-        		source "${TOP_DIR}"/lib/RK3399SDK_BuildEnvironment.sh
+			source "${TOP_DIR}"/lib/RK3399SDK_BuildEnvironment.sh
 			download_code
 			;;
-		"20") #I96
-        		"${TOP_DIR}"/lib/i96SDK_BuildEnvironment.sh
-			;;
-		"21") #2G-IOT
-        		"${TOP_DIR}"/lib/RDASDK_BuildEnvironment.sh
+		"20" | "21") #RDA 
+			source "${TOP_DIR}"/lib/RDASDK_BuildEnvironment.sh
+			download_code
 			;;
 		"22") #3G-IOT
-        		"${TOP_DIR}"/lib/3G-iotSDK_BuildEnvironment.sh
+			source "${TOP_DIR}"/lib/3G-iotSDK_BuildEnvironment.sh
+			download_code
 			;;
 		"23") #4G-IOT
-        		"${TOP_DIR}"/lib/4G-iotSDK_BuildEnvironment.sh
+			source "${TOP_DIR}"/lib/4G-iotSDK_BuildEnvironment.sh
+			download_code
 			;;
 		*) # Other
     			echo "Unsupport Board!!!"
