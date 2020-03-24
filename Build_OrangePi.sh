@@ -55,41 +55,35 @@ BOARD=$(whiptail --title "Orange Pi Build System" \
 	case "${BOARD}" in
 		"0" | "1") #H2
 			source "${TOP_DIR}"/lib/H2SDK_BuildEnvironment.sh
-			download_code
 			;;
 		"2" | "3" | "4" | "5" | "6" | "7" | "8") #H3
 			source "${TOP_DIR}"/lib/H3SDK_BuildEnvironment.sh
-			download_code
 			;;
 		"9" | "10" | "11" | "12") #H5
 			source "${TOP_DIR}"/lib/H5SDK_BuildEnvironment.sh
-			download_code
 			;;
 		"13" | "14") #A64
 			source "${TOP_DIR}"/lib/A64SDK_BuildEnvironment.sh
-			download_code
 			;;
 		"15" | "16" | "17") #H6
 			source "${TOP_DIR}"/lib/H6SDK_BuildEnvironment.sh
-			download_code
 			;;
 		"18" | "19") #RK3399
 			source "${TOP_DIR}"/lib/RK3399SDK_BuildEnvironment.sh
-			download_code
 			;;
 		"20" | "21") #RDA 
 			source "${TOP_DIR}"/lib/RDASDK_BuildEnvironment.sh
-			download_code
 			;;
 		"22") #3G-IOT
 			source "${TOP_DIR}"/lib/3G-iotSDK_BuildEnvironment.sh
-			download_code
 			;;
 		"23") #4G-IOT
 			source "${TOP_DIR}"/lib/4G-iotSDK_BuildEnvironment.sh
-			download_code
 			;;
 		*) # Other
     			echo "Unsupport Board!!!"
 			;;
 	esac
+
+# Start downloading the sdk
+download_code
