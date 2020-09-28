@@ -129,7 +129,7 @@ uboot                           U-boot source directory
 
 ## 4. Build u-boot/linux/rootfs/iamges for your Orange Pi
 
-* Run builsh.sh script.
+* Run build.sh script.
 
 ```
 $ cd OrangePiH3   //For different sdk, the name will be different.
