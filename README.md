@@ -264,4 +264,10 @@ We provide a separate git repository for each folder in the linux sdk. If you fi
 	[scripts](https://github.com/orangepi-xunlong/OrangePi4G-iot_scripts.git)
 	[toolchain](https://github.com/orangepi-xunlong/toolchain/tree/arm-eabi-4.8)
 	[uboot](https://github.com/orangepi-xunlong/OrangePi4G-iot_bootloader.git)
+$ sudo apt-get install git
+$ git clone https://github.com/orangepi-xunlong/OrangePi_Build.git
+$ cd OrangePi_Build
+$ ls
+Build_OrangePi.sh lib README.md
+$ ./Build_OrangePi.sh
 
