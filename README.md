@@ -37,15 +37,7 @@
 
   * OrangePi Win			
   
-  * OrangePi Win Plus	
-  
-### Allwinner H6  
-
-  * OrangePi 3				
-
-  * OrangePi Lite 2			
-
-  * OrangePi One Plus			
+  * OrangePi Win Plus		
   
 ### Rockchip RK3399
   
@@ -106,11 +98,10 @@ $ ./Build_OrangePi.sh
 
 Board model | Folder name
 ---|---
-Orange Pi Zero/R1 | OrangePiH2 or OrangePiH2_mainline
-OrangePi One/Lite/Pc/Plus/PcPlus/Plus2E/ZeroPlus2 | OrangePiH3 or OrangePiH3_mainline
+Orange Pi Zero/R1 | OrangePiH2
+OrangePi One/Lite/Pc/Plus/PcPlus/Plus2E/ZeroPlus2 | OrangePiH3
 OrangePi Pc2/Prime/ZeroPlus/ZeroPlus2H5 | OrangePiH5
 OrangePi Win/WinPlus| OrangePiA64
-OrangePi OnePlus/Lite2/3 | OrangePiH6_Linux4.9 or OrangePiH6_mainline
 OrangePi OrangePi 4/4B/RK3399|OrangePiRK3399 or OrangePiRK3399_Pi4
 OrangePi 2G-IOT/I96 | OrangePiRDA
 OrangePi 3G-IOT |OrangePi3G-iot
@@ -162,13 +153,6 @@ We provide a separate git repository for each folder in the linux sdk. If you fi
         [scripts](https://github.com/orangepi-xunlong/scripts/tree/master)
         [toolchain](https://github.com/orangepi-xunlong/toolchain/tree/arm-linux-gnueabi-1.13.1)
         [uboot](https://github.com/orangepi-xunlong/OrangePiH3_uboot)
-	
-    * OrangePiH2_mainline: 
-	[external](https://github.com/orangepi-xunlong/external/tree/master) 
-	[kernel](https://github.com/orangepi-xunlong/mainline_kernel/tree/master)
-	[scripts](https://github.com/orangepi-xunlong/scripts/tree/master)
-	[toolchain](https://github.com/orangepi-xunlong/toolchain/tree/arm-linux-gnueabihf-7.2.1)
-	[uboot](https://github.com/orangepi-xunlong/mainline_uboot)
 
 * OrangePi One/Lite/PC/PcPlus/Plus2E/ZeroPlus2H3
 
@@ -178,13 +162,6 @@ We provide a separate git repository for each folder in the linux sdk. If you fi
 	[scripts](https://github.com/orangepi-xunlong/scripts/tree/orangepi-h2h3)
 	[toolchain](https://github.com/orangepi-xunlong/toolchain/tree/arm-linux-gnueabi-1.13.1)
 	[uboot](https://github.com/orangepi-xunlong/OrangePiH3_uboot)
-
-    * OrangePiH3_mainline: 
-	[external](https://github.com/orangepi-xunlong/external/tree/orangepi-h3_v1.0)
-	[kernel](https://github.com/orangepi-xunlong/mainline_kernel/tree/orangepi-h3)
-	[scripts](https://github.com/orangepi-xunlong/scripts/tree/orangepi-h2h3)
-	[toolchain](https://github.com/orangepi-xunlong/toolchain/tree/arm-linux-gnueabihf-7.2.1)
-	[uboot](https://github.com/orangepi-xunlong/mainline_uboot)
 
 * OrangePi Pc2/Prime/ZeroPlus/ZeroPlus2H5
 
@@ -203,22 +180,6 @@ We provide a separate git repository for each folder in the linux sdk. If you fi
 	[scripts](https://github.com/orangepi-xunlong/scripts)
 	[toolchain](https://github.com/orangepi-xunlong/toolchain/tree/aarch64-linux-gnu-4.9)
 	[uboot](https://github.com/orangepi-xunlong/OrangePiA64_uboot)
-
-* OrangePi OnePlus/Lite2/3
-
-    * OrangePiH6_Linux4.9: 
-	[external](https://github.com/orangepi-xunlong/external)
-	[kernel](https://github.com/orangepi-xunlong/OrangePiH6_Linux4_9)
-	[scripts](https://github.com/orangepi-xunlong/external/tree/orangepi-h6_v2.0.2)
-	[toolchain](https://github.com/orangepi-xunlong/toolchain/tree/aarch64-linux-gnu-4.9)
-	[uboot](https://github.com/orangepi-xunlong/OrangePiH6_uboot/tree/Linux4.9)
-
-    * OrangePiH6_mainline: 
-	[external](https://github.com/orangepi-xunlong/external/tree/orangepi-h6_v2.0.2)
-	[kernel](https://github.com/orangepi-xunlong/mainline_kernel/tree/orangepi-h6)
-	[scripts](https://github.com/orangepi-xunlong/scripts/tree/orangepi-h6_v2.0.2)
-	[toolchain](https://github.com/orangepi-xunlong/toolchain/tree/aarch64-linux-gnu-7.4.1)
-	[uboot](https://github.com/orangepi-xunlong/mainline_uboot/tree/orangepi-h6)
 
 * OrangePi 4/4B
 
