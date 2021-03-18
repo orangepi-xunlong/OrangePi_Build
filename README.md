@@ -1,28 +1,6 @@
 
 ## 1. Orange Pi build system supports:
 
-### Allwinner H2+
-	
-  * OrangePi R1				
- 
-  * OrangePi Zero	
-  
-### Allwinner H3
-
-  * OrangePi One			
-
-  * OrangePi Lite			
-	
-  * OrangePi Pc	
-  
-  * OrangePi Plus		
-
-  * OrangePi Pc Plus			
-
-  * OrangePi Plus 2E			
-
-  * OrangePi Zero Plus2 H3		
-
 ### Allwinner H5
 
   * OrangePi Pc 2			
@@ -40,10 +18,6 @@
   * OrangePi Win Plus		
   
 ### Rockchip RK3399
-  
-  * OrangePi 4
-  
-  * OrangePi 4B
   
   * OrangePi RK3399
   
@@ -98,11 +72,9 @@ $ ./Build_OrangePi.sh
 
 Board model | Folder name
 ---|---
-Orange Pi Zero/R1 | OrangePiH2
-OrangePi One/Lite/Pc/Plus/PcPlus/Plus2E/ZeroPlus2 | OrangePiH3
 OrangePi Pc2/Prime/ZeroPlus/ZeroPlus2H5 | OrangePiH5
 OrangePi Win/WinPlus| OrangePiA64
-OrangePi OrangePi 4/4B/RK3399|OrangePiRK3399 or OrangePiRK3399_Pi4
+OrangePi OrangePi RK3399|OrangePiRK3399
 OrangePi 2G-IOT/I96 | OrangePiRDA
 OrangePi 3G-IOT |OrangePi3G-iot
 OrangePi 4G-IOT|OrangePi4G-iot
@@ -144,24 +116,6 @@ $ ./build.sh
 ## 6 Maintain Orange Pi
 
 We provide a separate git repository for each folder in the linux sdk. If you find any bugs or add new features, welcome to patch them, more details:
-  
-* OrangePi Zero/R1
-
-    * OrangePiH2:
-        [external](https://github.com/orangepi-xunlong/external/tree/master)
-        [kernel](https://github.com/orangepi-xunlong/OrangePiH3_kernel)
-        [scripts](https://github.com/orangepi-xunlong/scripts/tree/master)
-        [toolchain](https://github.com/orangepi-xunlong/toolchain/tree/arm-linux-gnueabi-1.13.1)
-        [uboot](https://github.com/orangepi-xunlong/OrangePiH3_uboot)
-
-* OrangePi One/Lite/PC/PcPlus/Plus2E/ZeroPlus2H3
-
-    * OrangePiH3: 
-	[external](https://github.com/orangepi-xunlong/external/tree/orangepi-h3_v1.0)
-	[kernel](https://github.com/orangepi-xunlong/OrangePiH3_kernel)
-	[scripts](https://github.com/orangepi-xunlong/scripts/tree/orangepi-h2h3)
-	[toolchain](https://github.com/orangepi-xunlong/toolchain/tree/arm-linux-gnueabi-1.13.1)
-	[uboot](https://github.com/orangepi-xunlong/OrangePiH3_uboot)
 
 * OrangePi Pc2/Prime/ZeroPlus/ZeroPlus2H5
 
@@ -180,15 +134,6 @@ We provide a separate git repository for each folder in the linux sdk. If you fi
 	[scripts](https://github.com/orangepi-xunlong/scripts)
 	[toolchain](https://github.com/orangepi-xunlong/toolchain/tree/aarch64-linux-gnu-4.9)
 	[uboot](https://github.com/orangepi-xunlong/OrangePiA64_uboot)
-
-* OrangePi 4/4B
-
-    * OrangePiRK3399_Pi4: 
-	[external](https://github.com/orangepi-xunlong/OrangePiRK3399_external/tree/orangepi_4)
-	[kernel](https://github.com/orangepi-xunlong/OrangePiRK3399_kernel.git)
-	[scripts](https://github.com/orangepi-xunlong/OrangePiRK3399_scripts/tree/orangepi_4)
-	[toolchain](https://github.com/orangepi-xunlong/toolchain/tree/aarch64-linux-gnu-6.3)
-	[uboot](https://github.com/orangepi-xunlong/OrangePiRK3399_uboot.git)  
 
 * OrangePi RK3399 
 
