@@ -26,35 +26,28 @@ OPTION=$(whiptail --title "Orange Pi Build System" \
 
 BOARD=$(whiptail --title "Orange Pi Build System" \
 	--menu "$MENUSTR" 20 60 10 --cancel-button Finish --ok-button Select \
-	"1"  "Orange Pi PC2" \
-	"2"  "Orange Pi Prime" \
-	"3"  "Orange Pi Zero Plus" \
-	"4"  "Orange Pi Zero Plus2(H5)" \
-	"5"  "Orange Pi Win/WinPlus" \
-	"6"  "Orange Pi RK3399" \
-	"7"  "Orange Pi I96" \
-	"8"  "Orange Pi 2G-IOT" \
-	"9"  "Orange Pi 3G-IOT" \
-	"10" "Orange Pi 4G-iot" \
+	"1"  "Orange Pi Win/WinPlus" \
+	"2"  "Orange Pi RK3399" \
+	"3"  "Orange Pi I96" \
+	"4"  "Orange Pi 2G-IOT" \
+	"5"  "Orange Pi 3G-IOT" \
+	"6" "Orange Pi 4G-iot" \
 	3>&1 1>&2 2>&3)
 
 	case "${BOARD}" in
-		"1" | "2" | "3" | "4") #H5
-			source "${TOP_DIR}"/lib/H5SDK_BuildEnvironment.sh
-			;;
-		"5") #A64
+		"1") #A64
 			source "${TOP_DIR}"/lib/A64SDK_BuildEnvironment.sh
 			;;
-		"6") #RK3399
+		"2") #RK3399
 			source "${TOP_DIR}"/lib/RK3399SDK_BuildEnvironment.sh
 			;;
-		"7" | "8") #RDA
+		"3" | "4") #RDA
 			source "${TOP_DIR}"/lib/RDASDK_BuildEnvironment.sh
 			;;
-		"9") #3G-IOT
+		"5") #3G-IOT
 			source "${TOP_DIR}"/lib/3G-iotSDK_BuildEnvironment.sh
 			;;
-		"10") #4G-IOT
+		"6") #4G-IOT
 			source "${TOP_DIR}"/lib/4G-iotSDK_BuildEnvironment.sh
 			;;
 		*) # Other
