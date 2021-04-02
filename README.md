@@ -1,15 +1,5 @@
 
 ## 1. Orange Pi build system supports:
-
-### Allwinner H5
-
-  * OrangePi Pc 2			
-
-  * OrangePi Prime	
-  
-  * OrangePi Zero Plus
-
-  * OrangePi Zero Plus2 H5	
   
 ### Allwinner A64
 
@@ -72,7 +62,6 @@ $ ./Build_OrangePi.sh
 
 Board model | Folder name
 ---|---
-OrangePi Pc2/Prime/ZeroPlus/ZeroPlus2H5 | OrangePiH5
 OrangePi Win/WinPlus| OrangePiA64
 OrangePi OrangePi RK3399|OrangePiRK3399
 OrangePi 2G-IOT/I96 | OrangePiRDA
@@ -116,15 +105,6 @@ $ ./build.sh
 ## 6 Maintain Orange Pi
 
 We provide a separate git repository for each folder in the linux sdk. If you find any bugs or add new features, welcome to patch them, more details:
-
-* OrangePi Pc2/Prime/ZeroPlus/ZeroPlus2H5
-
-    * OrangePiH5: 
-	[external](https://github.com/orangepi-xunlong/external)
-	[kernel](https://github.com/orangepi-xunlong/OrangePiH5_kernel)
-	[scripts](https://github.com/orangepi-xunlong/scripts)
-	[toolchain](https://github.com/orangepi-xunlong/toolchain/tree/aarch64-linux-gnu-4.9)
-	[uboot](https://github.com/orangepi-xunlong/OrangePiH5_uboot)
 
 * OrangePi Win/WinPlus
 
